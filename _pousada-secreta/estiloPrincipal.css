@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+    font-family: Source Sans Pro;
+    border: 0px;
+    margin: 0px;
+    color: rgba(0, 0, 0, 0.746);
+    }
+
+body {
+    background-color: rgb(255, 255, 255);
+    }
+
+a {
+    color: rgba(0, 0, 0, 0.746);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/**********************/
+
+.container-main {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    /* teste git*/
+}
+
+/*.container-flex-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 150px;
+}*/
+
+#topo {  
+    position: fixed;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 30px solid;
+    border-image: linear-gradient(rgb(255, 255, 255), #67aa9371) 100;
+}
+   
+#topo a {
+    text-decoration: none;
+    padding: 20px;
+}
+
+#menu {
+    display: block;
+    margin: 0 auto;
+    line-height: 60px;
+    width: 1024px;
+}
+
+#pousada {
+    text-decoration: none;
+    font-size: 25px;
+    float: left;
+    margin-left: 40px;
+}
+
+#pousada span {
+    color: #00668f;
+}
+
+#links {
+
+    float: right;
+    text-transform: uppercase;
+    /*font-size: ;*/
+}
+/*********************/
+
+#principal {
+    background-image: url(assets/img-fundo.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+  }
+
+#titulo {
+    display: block; 
+    width: 500px;
+    height: 200px;
+    background-color: #67aa9396;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+} 
+
+/*#titulo {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+    width: 500px;
+    height: 200px;
+    background-color: rgba(2, 110, 114, 0.356);
+    border: 1px solid rgba(192, 253, 233, 0.856);
+    border-radius: 5px;
+}*/
+
+#titulo h1 {
+    text-align: center;
+    color: white;
+    line-height: px;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+#titulo p {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-top: 10%;
+    
+}
+
+ /******** Main ***********/
+.container-sessoes {
+    display: inline;
+    width: 500px;
+    height: 220px;
+    margin-top: 2%;
+}
+
+.container-sessoes h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-top: 55px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.container-sessoes p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#quartos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 1024px;
+}
+
+.container-tiposdequarto {
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    border-bottom: 2px solid #67AA92;
+}
+
+.container-tiposdequarto img {
+    width: 100%;
+}
+
+.container-tiposdequarto p {
+    text-transform: uppercase;
+    padding: 20px 0 15px 0;
+}
+
+div#localizacao {
+    width: 100%;
+}
+
+/********************* Sobre **********************/
+#sobre-a-pousada {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1024px;
+    margin-bottom: 40px;
+}
+
+.container-sobre-sessoes img {
+    width: 120px;
+    height: 100%; 
+    object-fit: cover;
+    object-position: center;
+}
+
+.container-sobre-sessoes {
+    display: flex;   
+    height: 150px;
+    margin-bottom: 40px;
+}
+
+.container-sobre-sessoes h3 {
+    display: block;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.sobre-a-pousada-texto {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    margin-left: 10px;
+    flex-grow: 1;
+    width: 350px;
+    height: 150px;    
+}
+
+
+/****************** Rodapé *******************/
+#rodape {
+    /*background-image: linear-gradient(to bottom, (#67AA92), (#67aa9300));*/
+    background-color: #67AA92;
+    box-sizing: content-box;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ }
+
+#rodape h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #fff;
+}
+
+#fale {
+    display: inline-block;
+    width: 200px;
+}
+
+#rodape a {
+    color: white;
+}
+
+#rodape p {
+    color: #fff;
+}
+
+#contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-items: center;
+    width: 1024px;
+    height: 70%;
+    border-bottom: 1px solid #3b64569f;
+}
+
+.container-rodape {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    align-items: center;
+    width: 230px;    
+}
+
+.container-rodape p {
+    color: #fff;
+    padding-left: 10px;
+}
+
+#copyright {
+    display: flex;
+    align-items: center;
+    height: 30%;
+}
+
